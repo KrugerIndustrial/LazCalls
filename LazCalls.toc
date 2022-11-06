@@ -1,6 +1,8 @@
 ## Interface: 100000
 ## Title: LazCalls
-## Version: 0.0.4
+## Version: 0.0.5
+## X-Curse-Project-ID: 698258
+## X-Wago-ID: vEGPWWK1
 
 libs\LibStub\LibStub.lua
 libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
