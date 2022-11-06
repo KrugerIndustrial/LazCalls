@@ -1,6 +1,6 @@
-## Interface: 90207
+## Interface: 100000
 ## Title: LazCalls
-## Version: 0.0.2
+## Version: 0.0.3
 
 libs\LibStub\LibStub.lua
 libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
