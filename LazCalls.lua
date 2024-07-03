@@ -1,8 +1,5 @@
 local LSM = LibStub("LibSharedMedia-3.0") 
 local LazCalls = LibStub("AceAddon-3.0"):NewAddon("LazCalls", "AceConsole-3.0", "AceComm-3.0", "AceSerializer-3.0")
--- local AceConsole = LibStub("AceConsole-3.0")
--- local AceComm = LibStub("AceComm-3.0")
--- local AceSerializer = LibStub("AceSerializer-3.0")
 
 function LazCalls:OnInitialize()
 
