@@ -7,7 +7,9 @@ local LazCalls = LibStub("AceAddon-3.0"):NewAddon("LazCalls", "AceConsole-3.0", 
 function LazCalls:OnInitialize()
 
     local colorString = "FF52FF0E"
-    local commPrefix = "LazCalls"
+    local versionMatch = "FF1EFF0C"
+    local verionsMisMatch = "FFFF4700"
+    local addonVersion = C_AddOns.GetAddOnMetadata("LazCalls", "Version")
 
     local soundVals = {
         {"Move To Diamond|r", [[Interface\Addons\LazCalls\sound\MoveToDiamond.ogg]]},
@@ -22,7 +24,7 @@ function LazCalls:OnInitialize()
         LSM:Register("sound", "|c" .. colorString .. val[1], val[2])
     end
 
-    function LazCalls:OnCommReceived(prefix, message, distribution, sender)
+    function LazCalls:OnCommReceived(commPrefix, message, channel, source)
         local deserializedTable = {LazCalls:Deserialize(message)}
 		if (not deserializedTable[1]) then
             LazCalls:Print("Somethings up")
@@ -30,24 +32,33 @@ function LazCalls:OnInitialize()
 		end
 
 		tremove(deserializedTable, 1)
-		local prefix, player, realm, coreVersion, arg6, arg7, arg8, arg9 = unpack(deserializedTable)
-		player = sender
-        LazCalls:Print(player)
+		local message, player = unpack(deserializedTable)
+		player = source
+
+        if(message == "REQUEST") then
+            LazCalls:SendCommMessage("LAZCALLS", LazCalls:Serialize(addonVersion), "WHISPER", player)
+        elseif channel == "WHISPER" then
+            if(message == addonVersion) then
+                message = "|c" .. versionMatch .. message
+            else
+                message = "|c" .. verionsMisMatch .. message
+            end
+            LazCalls:Print(player, message)
+        end
+        
     end
 
-    -- AceComm:RegisterComm(commPrefix .. "request")
+    LazCalls:RegisterComm("LAZCALLS")
     -- AceComm:RegisterComm(commPrefix .. "reply")
-
-
-
 
     LazCalls:RegisterChatCommand("laz", "LazCallsSlashProcessor")
 
     function LazCalls:LazCallsSlashProcessor(input) 
         if input == "version" then
-            local addonVersion = C_AddOns.GetAddOnMetadata("LazCalls", "Version")
-            LazCalls:Print("LazCalls Version: ", addonVersion)
-            -- AceComm:SendCommMessage(commPrefix .. "request", "requesting version", "RAID")
+            LazCalls:Print("LazCalls Version Check:")
+            LazCalls:Print("Your Version: ", addonVersion)
+            LazCalls:Print("------------------------")
+            LazCalls:SendCommMessage("LAZCALLS", LazCalls:Serialize("REQUEST"), "GUILD")
         else 
             LazCalls:Print("LazCalls")
             LazCalls:Print("Loaded Files: ")
