@@ -1,0 +1,17 @@
+{
+    "Lua.diagnostics.globals": [
+        "SlashCmdList",
+        "hash_SlashCmdList",
+        "DEFAULT_CHAT_FRAME",
+        "ChatFrame1",
+        "StaticPopup1"
+    ],
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".lua",
+                "cmd": "cp ${file} \"c:\\Program Files (x86)\\World of Warcraft\\_retail_\\Interface\\AddOns\\LazCalls\\${fileBasename}\" "
+            }
+        ]
+    }
+}
