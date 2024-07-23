@@ -14,7 +14,23 @@ function LazCalls:OnInitialize()
         {"CN01-Blind Swipe|r", [[Interface\Addons\LazCalls\sound\CN01-Blind Swipe.ogg]]},
         {"CN01-Earsplitting Screech|r", [[Interface\Addons\LazCalls\sound\CN01-Earsplitting Screech.ogg]]},
         {"CN01-Echoing Screech|r", [[Interface\Addons\LazCalls\sound\CN01-Echoing Screech.ogg]]},
-        {"CN01-Echolocation|r", [[Interface\Addons\LazCalls\sound\CN01-Echolocation.ogg]]}
+        {"CN01-Echolocation|r", [[Interface\Addons\LazCalls\sound\CN01-Echolocation.ogg]]},
+        {"VOTI (09) - Adds (1-1)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Adds (1-1).ogg]]},
+        {"VOTI (09) - Adds (2-1)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Adds (2-1).ogg]]},
+        {"VOTI (09) - Adds (2-2)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Adds (2-2).ogg]]},
+        {"VOTI (09) - Adds (3-2)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Adds (3-2).ogg]]},
+        {"VOTI (09) - Adds (5-1)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Adds (5-1).ogg]]},
+        {"VOTI (09) - Greatstaff (1)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Greatstaff (1).ogg]]},
+        {"VOTI (09) - Greatstaff (12)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Greatstaff (12).ogg]]},
+        {"VOTI (09) - Greatstaff (13)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Greatstaff (13).ogg]]},
+        {"VOTI (09) - Greatstaff (3)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Greatstaff (3).ogg]]},
+        {"VOTI (09) - Greatstaff (9)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Greatstaff (9).ogg]]},
+        {"VOTI (09) - Heal Absorb (Evens)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Heal Absorb (Evens).ogg]]},
+        {"VOTI (09) - Heal Absorb (Odds)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Heal Absorb (Odds).ogg]]},
+        {"VOTI (09) - Mortal Stoneslam (45)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Mortal Stoneslam (45).ogg]]},
+        {"VOTI (09) - Root Absorb (8)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Root Absorb (8).ogg]]},
+        {"VOTI (09) - Wildfire (14)|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Wildfire (14).ogg]]},
+        {"VOTI (09) - Wilfire|r", [[Interface\Addons\LazCalls\sound\VOTI (09) - Wilfire.ogg]]}        
     }
 
     for _, val in ipairs(soundVals) do
