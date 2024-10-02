@@ -1,6 +1,6 @@
 ## Interface: 110000, 110002
 ## Title: LazCalls
-## Version: 0.0.11
+## Version: 0.0.14
 ## X-Curse-Project-ID: 698258
 ## X-Wago-ID: vEGPWWK1
 
