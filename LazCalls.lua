@@ -32,6 +32,13 @@ function LazCalls:OnInitialize()
         {"Soak Puddles|r", [[Interface\Addons\LazCalls\sound\Soak Puddles.ogg]]},
         {"Soak Soak Soak Soak Soak|r", [[Interface\Addons\LazCalls\sound\Soak Soak Soak Soak Soak.ogg]]},
         {"Tanks - Drop in Corner|r", [[Interface\Addons\LazCalls\sound\Tanks - Drop in Corner.ogg]]},
+        {"(MO1) Knockback & Intermission|r", [[Interface\Addons\LazCalls\sound\(MO1) Knockback & Intermission.ogg]]},
+        {"(MO1) Red & Blue Soaks & Knockback|r", [[Interface\Addons\LazCalls\sound\(MO1) Red & Blue Soaks & Knockback.ogg]]},
+        {"(MO1) Red & Blue Soaks|r", [[Interface\Addons\LazCalls\sound\(MO1) Red & Blue Soaks.ogg]]},
+        {"(MO1) Wall Incoming|r", [[Interface\Addons\LazCalls\sound\(MO1) Wall Incoming.ogg]]},
+        {"(MO2) Lines Behind Cans|r", [[Interface\Addons\LazCalls\sound\(MO2) Lines Behind Cans.ogg]]},
+        {"(MO2) Orbs to Cans|r", [[Interface\Addons\LazCalls\sound\(MO2) Orbs to Cans.ogg]]},
+        {"(MO2) Stack|r", [[Interface\Addons\LazCalls\sound\(MO2) Stack.ogg]]}
     }
 
     for _, val in ipairs(soundVals) do
